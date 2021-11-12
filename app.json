@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index1/index1",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "hope健身打卡",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": []
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
