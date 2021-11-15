@@ -10,10 +10,11 @@
 	<view class="show_img">
 		<image src="{{url}}" mode="scaleToFill" bindtap="selectImg"></image>
 	</view>
-
+	
 	<text>{{date}}</text>
 	
 	<view>
 		<button bindtap="goCheck">打卡</button>
 	</view>
+	
 </view>

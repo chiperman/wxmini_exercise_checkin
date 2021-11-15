@@ -25,10 +25,11 @@
 	height: 128rpx;
 	margin: 20rpx;
 	border-radius: 50%;
+
 }
 
 
 .show_img{
 	/* background-color: rgb(226, 33, 33); */
-	height: 500rpx;
+	/* box-shadow: 8rpx 0rpx 16rpx rgba(0, 0, 0, 0.12); */
 }
