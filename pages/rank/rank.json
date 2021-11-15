@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "rankByNumber": "/components/rank_by_number/rank_by_number",
+    "rankByTime": "/components/rank_by_time/rank_by_time",
+    "cpt_select": "/components/cpt_select/cpt_select"
+  }
 }

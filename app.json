@@ -12,17 +12,20 @@
   "tabBar": {
     "color": "#222222",
     "selectedColor": "#efb336",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "我的",
-      "iconPath": "images/me.png",
-      "selectedIconPath": "images/me_choose.png"
-    }, {
-      "pagePath": "pages/rank/rank",
-      "text": "排行榜",
-      "iconPath": "images/rank.png",
-      "selectedIconPath": "images/rank_choose.png"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me_choose.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "排行榜",
+        "iconPath": "images/rank.png",
+        "selectedIconPath": "images/rank_choose.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",

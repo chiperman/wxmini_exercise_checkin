@@ -1,0 +1,9 @@
+<view class="container">
+	<view class="rank_list_container" wx:for="{{rank_list}}">
+		<view class=" info_container">
+			<image class="avatar" src="{{item.avatar}}" mode="aspectFill"></image>
+			<view class="name">{{item.name}}</view>
+		</view>
+		<view class="dateTime">{{item.number}}</view>
+	</view>
+</view>

@@ -5,7 +5,10 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-
+		isShowSelectCpt: false, // 是否显示选择器
+		isShowRankByTimeCpt: true, // 是否显示时间排序
+		isShowRankByNumberCpt: false, // 是否显示次数排序
+		rankState: "按时间排序", // 排序状态
 	},
 
 	/**
@@ -28,6 +31,38 @@ Page({
 	onShow: function () {
 
 	},
+	clickSelectButton: function () {
+		var that = this
+		that.setData({
+			isShowSelectCpt: true,
+		})
+	},
+	closeSelectCpt() {
+		var that = this
+		that.setData({
+			isShowSelectCpt: false,
+		})
+	},
+	rankStateChanged(e) {
+		var that = this
+		console.log(e.detail)
+		if (e.detail == 0) {
+			that.setData({
+				isShowRankByTimeCpt: true,
+				isShowRankByNumberCpt: false,
+				rankState: "按时间排序"
+			})
+		}
+		else if (e.detail == 1) {
+			that.setData({
+				isShowRankByTimeCpt: false,
+				isShowRankByNumberCpt: true,
+				rankState: "按次数排序"
+
+			})
+		}
+	},
+
 
 	/**
 	 * 生命周期函数--监听页面隐藏

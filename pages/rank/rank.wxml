@@ -1,2 +1,17 @@
- <!--pages/rank/rank.wxml-->
-<text>pages/rank/rank.wxml</text>
+<view class="container">
+	<view class="page">
+		<view class="button_container">
+			<view class="rank_button" bindtap="clickSelectButton">{{rankState}}
+				<image class="down_icon" mode="widthFix" src="/images/down.png"></image>
+			</view>
+		</view>
+		<view class="title">排行</view>
+		<view class="rank_list_container">
+			<rankByTime wx:if="{{isShowRankByTimeCpt}}"></rankByTime>
+			<rankByNumber wx:if="{{isShowRankByNumberCpt}}"></rankByNumber>
+		</view>
+	</view>
+</view>
+
+<cpt_select wx:if="{{isShowSelectCpt}}" bind:closeSelectCpt="closeSelectCpt" bind:rankStateChanged="rankStateChanged">
+</cpt_select>
