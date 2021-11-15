@@ -1,9 +1,19 @@
 <!--pages/index/index.wxml-->
 <view class="container">
 	<view class="userinfo">
-		<open-data class="user_img" type="userAvatarUrl"></open-data>
+		<view class="img_container">
+			<open-data class="user_img" type="userAvatarUrl"></open-data>
+		</view>
 		<open-data class="user_name" type="userNickName"></open-data>
 	</view>
-	<view class="">
+	
+	<view class="show_img">
+		<image src="{{url}}" mode="scaleToFill" bindtap="selectImg"></image>
+	</view>
+
+	<text>{{date}}</text>
+	
+	<view>
+		<button bindtap="goCheck">打卡</button>
 	</view>
 </view>
