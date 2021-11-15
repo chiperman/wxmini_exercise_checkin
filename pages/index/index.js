@@ -5,8 +5,35 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-
+		url:"../../images/upload_Img.png",
+		date:""
 	},
+	
+	
+	selectImg: function(params) {
+		console.log('dian ji l')
+		var that = this;
+		const util = require('../../utils/util.js')
+
+		wx.chooseImage({
+		count: 1,
+		sizeType: ['original', 'compressed'],
+		sourceType: ['album', 'camera'],
+		success(res) {
+			var temp_date = util.formatTime(new Date()); 
+			that.setData({
+				url:res.tempFilePaths,
+				date:temp_date
+			})
+		},
+
+		})
+	},
+
+	goCheck:function (params) {
+		
+	},
+	
 
 	/**
 	 * 生命周期函数--监听页面加载
