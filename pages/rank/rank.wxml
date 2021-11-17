@@ -13,5 +13,6 @@
 	</view>
 </view>
 
-<cpt_select wx:if="{{isShowSelectCpt}}" bind:closeSelectCpt="closeSelectCpt" bind:rankStateChanged="rankStateChanged">
+<cpt_select wx:if="{{isShowSelectCpt}}" bind:closeSelectCpt="closeSelectCpt" bind:rankStateChanged="rankStateChanged"
+	selectItem="{{rankState}}">
 </cpt_select>

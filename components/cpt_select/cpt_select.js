@@ -4,16 +4,25 @@ Component({
 	 * 组件的属性列表
 	 */
 	properties: {
-
+		selectItem: {
+			type: String,
+		}
 	},
 
 	/**
 	 * 组件的初始数据
 	 */
 	data: {
-
+		isSelected: "按时间排序",
 	},
-
+	observers: {
+		selectItem(res) {
+			console.log(res);
+			this.setData({
+				isSelected: res
+			})
+		}
+	},
 	/**
 	 * 组件的方法列表
 	 */

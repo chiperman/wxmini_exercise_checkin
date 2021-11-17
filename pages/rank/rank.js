@@ -22,14 +22,12 @@ Page({
 	 * 生命周期函数--监听页面初次渲染完成
 	 */
 	onReady: function () {
-
 	},
 
 	/**
 	 * 生命周期函数--监听页面显示
 	 */
 	onShow: function () {
-
 	},
 	clickSelectButton: function () {
 		var that = this
@@ -58,9 +56,9 @@ Page({
 				isShowRankByTimeCpt: false,
 				isShowRankByNumberCpt: true,
 				rankState: "按次数排序"
-
 			})
 		}
+		console.log(this.data.rankState);
 	},
 
 

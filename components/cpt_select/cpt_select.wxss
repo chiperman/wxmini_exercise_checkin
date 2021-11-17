@@ -45,3 +45,7 @@
 	border-radius: 15rpx;
 	font-weight: 500;
 }
+
+.newSelect {
+	background-color: #F3F2FE;
+}

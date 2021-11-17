@@ -2,7 +2,9 @@
 	<view class="black_background" bindtap="closeSelectCpt"></view>
 	<view class="select_container">
 		<image class="dash_icon" src="/images/dash.png" mode="aspectFill" bindtap="closeSelectCpt"></image>
-		<view class="select_option time" bindtap="select" data-id="0">按时间排序</view>
-		<view class="select_option number" bindtap="select" data-id="1">按次数排序</view>
+		<view class="select_option {{isSelected == '按时间排序' ? 'newSelect' : '' }}" bindtap="select" data-id="0">按时间排序
+		</view>
+		<view class="select_option {{isSelected == '按次数排序' ? 'newSelect' : '' }}" bindtap="select" data-id="1">按次数排序
+		</view>
 	</view>
 </view>
