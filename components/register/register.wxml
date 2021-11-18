@@ -1,0 +1,19 @@
+<!--components/register/register.wxml-->
+
+<form bindsubmit="formSubmit">
+<view class="contain">
+   <view class="input-area">
+      <view class="input-log top">  
+        <image class="userinfo-logIcon" src="{{logIcon}}"></image>  
+        <input id="username" name="username" maxlength='4' type="text" placeholder="姓名" bindinput="get_username"  />
+      </view>
+      <view class="input-log">
+        <image class="userinfo-logIcon" src="{{pwdIcon}}"></image>  	
+        <input id="password" name="password" type="number" maxlength="11" placeholder="手机号（必填）" bindinput="get_phone"/>
+      </view>
+    </view>
+    <view class="btn-area">
+		<button lang="zh_CN" formType="submit" loading="{{btnLoading}}" type="primary" bindtap="click"> {{loginBtnTxt}} </button>
+    </view>
+</view>
+</form>

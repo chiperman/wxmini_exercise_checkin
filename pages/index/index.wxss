@@ -11,6 +11,10 @@
 	justify-content: space-around;
 }
 
+.container_hide {
+	display:none;
+}
+
 .userinfo {
 	display: flex;
 	flex-direction: column;
@@ -26,10 +30,4 @@
 	margin: 20rpx;
 	border-radius: 50%;
 
-}
-
-
-.show_img{
-	/* background-color: rgb(226, 33, 33); */
-	/* box-shadow: 8rpx 0rpx 16rpx rgba(0, 0, 0, 0.12); */
 }
