@@ -1,0 +1,33 @@
+/* components/register/register.wxss */
+
+.contain {
+	margin-top: 500rpx;
+}
+
+.input-log {
+	display: flex;
+	align-items: center;
+	height: 100rpx;
+	border-bottom: 1px solid #8b8b8b;
+
+}
+
+.top {
+	border-top: 1px solid #8b8b8b;
+}
+
+.userinfo-logIcon {
+	width: 60rpx;
+	height: 60rpx;
+	float: left;
+	margin-left: 40rpx;
+	margin-right: 40rpx;
+}
+
+.btn-area {
+	margin:50rpx 0;
+}
+
+.btn-area button {
+	height: 80rpx;
+}

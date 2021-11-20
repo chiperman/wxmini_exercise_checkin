@@ -6,7 +6,14 @@ Page({
 	 */
 	data: {
 		url:"../../images/upload_Img.png",
-		date:""
+		date:"",
+		 
+		//登录切换
+		show_container:false,
+
+		// register传回数据
+		user:{}
+	
 	},
 	
 	
@@ -33,7 +40,17 @@ Page({
 		
 	},
 	
-
+	getUser:function (params) {
+		var user = params.detail;
+		this.setData({
+			user:user
+		})
+		// wx.showModal({
+		// 	title: '提示',
+		// 	showCancel:false,
+		// 	content: '登录成功'
+		// });
+	},
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
@@ -59,7 +76,7 @@ Page({
 	 * 生命周期函数--监听页面隐藏
 	 */
 	onHide: function () {
-
+		
 	},
 
 	/**
