@@ -17,7 +17,6 @@ Component({
 	},
 	observers: {
 		selectItem(res) {
-			console.log(res);
 			this.setData({
 				isSelected: res
 			})
