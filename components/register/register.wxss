@@ -9,7 +9,11 @@
 	align-items: center;
 	height: 100rpx;
 	border-bottom: 1px solid #8b8b8b;
+}
 
+input {
+	height: 100rpx;
+	width: 80%;
 }
 
 .top {
@@ -31,3 +35,4 @@
 .btn-area button {
 	height: 80rpx;
 }
+

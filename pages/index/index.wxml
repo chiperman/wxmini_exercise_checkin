@@ -17,4 +17,6 @@
 	</view>
 </view>
 
-<register bind:check="getUser"></register>
+<view class="{{show_register?'show':'hide'}}"> 
+	<register bind:check="getUser"></register>
+</view>

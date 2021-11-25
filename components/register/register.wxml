@@ -1,6 +1,5 @@
 <!--components/register/register.wxml-->
-
-<form bindsubmit="formSubmit">
+<!-- <view>asda</view> -->
 <view class="contain">
    <view class="input-area">
       <view class="input-log top">  
@@ -16,4 +15,3 @@
 		<button lang="zh_CN" formType="submit" loading="{{btnLoading}}" type="primary" bindtap="click"> {{loginBtnTxt}} </button>
     </view>
 </view>
-</form>
