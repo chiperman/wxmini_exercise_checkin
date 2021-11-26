@@ -11,24 +11,6 @@ Page({
 		rankState: "按时间排序", // 排序状态
 	},
 
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-	onLoad: function (options) {
-
-	},
-
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady: function () {
-	},
-
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow: function () {
-	},
 	clickSelectButton: function () {
 		var that = this
 		that.setData({
@@ -58,42 +40,46 @@ Page({
 				rankState: "按次数排序"
 			})
 		}
-		console.log(this.data.rankState);
+		// console.log(this.data.rankState);
 	},
-
 
 	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide: function () {
+	* 生命周期函数--监听页面加载
+	*/
+	onLoad: function (options) { },
 
-	},
+	/**
+	* 生命周期函数--监听页面初次渲染完成
+	*/
+	onReady: function () { },
+
+	/**
+	* 生命周期函数--监听页面隐藏
+	*/
+	onHide: function () { },
+
+	/**
+	* 生命周期函数--监听页面显示
+	*/
+	onShow: function () { },
 
 	/**
 	 * 生命周期函数--监听页面卸载
 	 */
-	onUnload: function () {
-
-	},
+	onUnload: function () { },
 
 	/**
 	 * 页面相关事件处理函数--监听用户下拉动作
 	 */
-	onPullDownRefresh: function () {
-
-	},
+	onPullDownRefresh: function () { },
 
 	/**
 	 * 页面上拉触底事件的处理函数
 	 */
-	onReachBottom: function () {
-
-	},
+	onReachBottom: function () { },
 
 	/**
 	 * 用户点击右上角分享
 	 */
-	onShareAppMessage: function () {
-
-	}
+	onShareAppMessage: function () { }
 })

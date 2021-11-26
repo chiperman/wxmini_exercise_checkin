@@ -1,9 +1,9 @@
-<view class="container">
-	<view class="rank_list_container" wx:for="{{rank_list}}">
+<view class="container" wx:if="{{isShow}}">
+	<view class="rank_list_container" wx:for="{{rank_list}}" wx:key="item">
 		<view class=" info_container">
-			<image class="avatar" src="{{item.avatar}}" mode="aspectFill"></image>
-			<view class="name">{{item.name}}</view>
+			<image class="avatar" src="{{item.headImgUrl}}" mode="aspectFill"></image>
+			<view class="name">{{item.nickName}}</view>
 		</view>
-		<view class="dateTime">{{item.number}}次</view>
+		<view class="dateTime">{{item.checkinTimesNum}}次</view>
 	</view>
 </view>

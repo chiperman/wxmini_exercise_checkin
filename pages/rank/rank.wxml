@@ -7,8 +7,8 @@
 		</view>
 		<view class="title">排行</view>
 		<view class="rank_list_container">
-			<rankByTime wx:if="{{isShowRankByTimeCpt}}"></rankByTime>
-			<rankByNumber wx:if="{{isShowRankByNumberCpt}}"></rankByNumber>
+			<rankByTime isShow="{{isShowRankByTimeCpt}}"></rankByTime>
+			<rankByNumber isShow="{{isShowRankByNumberCpt}}"></rankByNumber>
 		</view>
 	</view>
 </view>
